@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Ricardo ';
-  lastName = 'Cortijo Ugaz'
+  lastName = 'Cortijo Ugaz';
+  age = 32;
 }
