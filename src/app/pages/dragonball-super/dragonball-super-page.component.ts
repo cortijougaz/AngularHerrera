@@ -8,17 +8,18 @@ interface Character {
 }
 
 @Component({
-  selector: 'dragonball-page',
-  templateUrl: './dragonball-page.component.html',
-  styleUrls: ['./dragonball-page.component.css'],
+  selector: 'dragonball-super-page',
+  templateUrl: './dragonball-super-page.component.html',
+  styleUrls: ['./dragonball-super-page.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DragonballPageComponent {
+export class DragonballSuperPageComponent {
   name = signal('');
   power = signal(0);
 
   characters = signal<Character[]>([
     {id: 1, name: 'Goku', power: 9001},
+    {id: 2, name: 'Vegeta', power: 8000},
   ]);
 
   addCharacter() {
